@@ -85,3 +85,13 @@ if(userPoints >= 3){
   alert('You finished with ' + userPoints + ' points, this isn\'t golf, the more points the better.');
 }
 console.log(user + ' finished with ' + userPoints + ' points');
+
+//Example
+var correctNumber = 12;
+var notDone = true;
+
+var gues;
+for (var guesses = 3; guesses > 0 && notDone; guesses--) {
+
+}
+//test
