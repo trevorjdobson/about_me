@@ -1,7 +1,5 @@
-{
-font-family: sans-serif;
-background-color: yellow;
-
-
-
+h1, body{
+  font-family: sans-serif;
+  background-color: red;
+  text-align: center;
 }
