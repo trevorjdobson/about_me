@@ -79,19 +79,44 @@ if(answer5 === 'yes' || answer5 === 'y'){
 } else {
   alert('Wrong, I am very tired, I need to quit my job');
 }
+var carsOwned = 4;
+var answer6 = prompt('How many cars have I owned?').toLowerCase();
+while (answer6 !== 4) {
+  if (answer6 === 4); {
+    alert('Good Job');
+    userPoints++;
+  }
+  if (answer6 > 4); {
+    prompt('Too many guess again');
+  }
+  if (answer6 < 4); {
+    prompt('Not enough, guess again');
+  }
+}
+
+var favDestinations = ['Hawaii', 'Las Vegas', 'Colorado', 'Alaska'];
+var attempts = 6;
+var flag = false;
+
+var answer7 = prompt('What is one of my favorite places to travel to?  City or State');
+
+while (!flag && attempts > 0) {
+  for (var i = 0; i < favDestinations.length; i++) {
+    if (answer7 === favDestinations[i]) {
+      flag = true;
+    }
+  }
+  if(flag === true) {
+    alert('Good guess');
+  } else {
+    answer = prompt('try again');
+    attempts--;
+  }
+}
+
 if(userPoints >= 3){
   alert('You finished with ' + userPoints + ' points. Good Job');
 } else {
   alert('You finished with ' + userPoints + ' points, this isn\'t golf, the more points the better.');
 }
 console.log(user + ' finished with ' + userPoints + ' points');
-
-//Example
-var correctNumber = 12;
-var notDone = true;
-
-var gues;
-for (var guesses = 3; guesses > 0 && notDone; guesses--) {
-
-}
-//test
