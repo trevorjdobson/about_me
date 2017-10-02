@@ -79,26 +79,29 @@ if(answer5 === 'yes' || answer5 === 'y'){
 } else {
   alert('Wrong, I am very tired, I need to quit my job');
 }
+
 var carsOwned = 4;
 var answer6 = prompt('How many cars have I owned?').toLowerCase();
-while (answer6 !== 4) {
-  if (answer6 === 4); {
+var answer6Correct = false;
+while (answer6Correct == false) {
+  if (answer6 === '4') {
     alert('Good Job');
+    answer6Correct = true;
     userPoints++;
   }
-  if (answer6 > 4); {
-    prompt('Too many guess again');
+  if (answer6 > 4) {
+    answer6 = prompt('Too many guess again');
   }
-  if (answer6 < 4); {
-    prompt('Not enough, guess again');
+  if (answer6 < 4) {
+    answer6 = prompt('Not enough, guess again');
   }
 }
 
-var favDestinations = ['Hawaii', 'Las Vegas', 'Colorado', 'Alaska'];
+var favDestinations = ['hawaii', 'las vegas', 'colorado', 'alaska'];
 var attempts = 6;
 var flag = false;
 
-var answer7 = prompt('What is one of my favorite places to travel to?  City or State');
+var answer7 = prompt('What is one of my favorite places to travel to?  City or State').toLowerCase();
 
 while (!flag && attempts > 0) {
   for (var i = 0; i < favDestinations.length; i++) {
@@ -115,8 +118,8 @@ while (!flag && attempts > 0) {
 }
 
 if(userPoints >= 3){
-  alert('You finished with ' + userPoints + ' points. Good Job');
+  alert('You finished with ' + userPoints + ' points out of 7. Good Job');
 } else {
-  alert('You finished with ' + userPoints + ' points, this isn\'t golf, the more points the better.');
+  alert('You finished with ' + userPoints + ' points out of 7, this isn\'t golf, the more points the better.');
 }
 console.log(user + ' finished with ' + userPoints + ' points');
